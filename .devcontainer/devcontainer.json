@@ -1,0 +1,48 @@
+{
+  "name": "TaskFlow DevOps Environment",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+      "version": "latest",
+      "helm": "latest",
+      "minikube": "latest"
+    },
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/aws-cli:1": {
+      "version": "latest"
+    }
+  },
+
+  "postCreateCommand": "echo 'Environment ready! Run: node --version && docker --version && kubectl version --client && terraform --version'",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "hashicorp.terraform",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  },
+
+  "forwardPorts": [3000, 4000, 5432, 9090, 3001],
+  "portsAttributes": {
+    "3000": { "label": "Next.js Frontend" },
+    "4000": { "label": "Express Backend" },
+    "5432": { "label": "PostgreSQL" },
+    "9090": { "label": "Prometheus" },
+    "3001": { "label": "Grafana" }
+  }
+}
