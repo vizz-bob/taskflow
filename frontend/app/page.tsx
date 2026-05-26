@@ -1,3 +1,4 @@
+
 'use client';
 import { useState, useEffect } from 'react';
 
@@ -8,7 +9,7 @@ interface Task {
   created_at: string;
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
+const API_URL = '';
 
 export default function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
