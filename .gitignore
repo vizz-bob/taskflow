@@ -4,3 +4,9 @@ node_modules/
 .next/
 *.log
 .DS_Store
+# Terraform
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/*.tfvars
+terraform/plan.txt
