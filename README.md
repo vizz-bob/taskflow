@@ -4,18 +4,17 @@
 
 A full-stack **Task Manager web app** called **TaskFlow**, designed specifically to teach you every concept needed for an industry-level DevOps role.
 
-**You are NOT learning to be a developer. You are learning to deploy, automate, and operate production systems.**
 
 ---
 
 ## What the App Does (Keep It Simple — Focus on DevOps)
 
-- Users can create, read, update, delete tasks (basic CRUD)
+- Users can create, read, update, delete tasks 
 - Frontend: Next.js (Node.js server — the important DevOps case)
 - Backend: Express.js REST API
 - Database: PostgreSQL
 
-The app itself is intentionally simple. The DevOps infrastructure around it is what matters.
+The DevOps infrastructure.
 
 ---
 
@@ -138,9 +137,9 @@ taskflow/
 
 ---
 
-## Learning Phases
+## Phases
 
-Follow these in order. Do NOT skip ahead.
+Follow these in order. 
 
 | Phase | File | Topics Covered |
 |---|---|---|
@@ -154,12 +153,9 @@ Follow these in order. Do NOT skip ahead.
 
 ---
 
-## Prerequisites — Nothing to Install on Your Mac
 
 > **This project runs entirely in GitHub Codespaces.**
-> Your Mac only needs a browser. Zero disk space used.
 
-**Mac disk space: 0 MB**
 
 | Tool | Status in Codespaces |
 |---|---|
@@ -171,14 +167,14 @@ Follow these in order. Do NOT skip ahead.
 | AWS CLI | Auto-installed via devcontainer |
 | minikube | Auto-installed via devcontainer |
 
-All tools are installed automatically when you open this repo in Codespaces,
+Open this repo in Codespaces,
 using the `.devcontainer/devcontainer.json` config file.
 
 ---
 
-## Environment Setup (Codespaces — Free, No Mac Space)
+## Environment Setup (Codespaces)
 
-| Phase | Where it runs | Mac space |
+| Phase | |
 |---|---|---|
 | Phase 1 — App | Codespaces terminal | 0 MB |
 | Phase 2 — Docker | Codespaces (Docker built-in) | 0 MB |
