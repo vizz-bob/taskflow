@@ -195,3 +195,11 @@ using the `.devcontainer/devcontainer.json` config file.
 
 **Step 2 →** Open `PHASE-1-app-setup.md` and follow it step by step
 # taskflow
+
+## Monitoring Dashboard
+
+![Grafana Dashboard](https://github.com/user-attachments/assets/232cc893-9609-44e7-bd74-625a1ed84fc7)
+
+![Application Metrics](https://github.com/user-attachments/assets/fd227514-9953-4b00-8360-bf42f2a1841f)
+
+![Infrastructure Metrics](https://github.com/user-attachments/assets/5ea4b503-af1b-4c63-a76d-b5300f7ce9b2)
