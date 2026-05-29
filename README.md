@@ -22,35 +22,35 @@ The DevOps infrastructure.
 
 ```
                         ┌─────────────────────────────────────────┐
-                        │              AWS Cloud (EKS)             │
-                        │                                          │
+                        │              AWS Cloud (EKS)            │
+                        │                                         │
   User Browser          │   ┌──────────┐      ┌──────────────┐    │
-      │                 │   │  Ingress  │      │  Next.js     │    │
-      │  HTTPS          │   │  (nginx)  │─────▶│  Frontend    │    │
+      │                 │   │  Ingress │      │  Next.js     │    │
+      │  HTTPS          │   │  (nginx) │─────▶│  Frontend    │    │
       └────────────────▶│   └──────────┘      │  Pod(s)      │    │
                         │                     └──────┬───────┘    │
-                        │                            │ REST API    │
+                        │                            │ REST API   │
                         │                     ┌──────▼───────┐    │
                         │                     │  Express.js  │    │
                         │                     │  Backend     │    │
                         │                     │  Pod(s)      │    │
                         │                     └──────┬───────┘    │
-                        │                            │             │
+                        │                            │            │
                         │                     ┌──────▼───────┐    │
-                        │                     │  PostgreSQL   │    │
-                        │                     │  (AWS RDS)    │    │
+                        │                     │  PostgreSQL   │   │
+                        │                     │  (AWS RDS)    │   │
                         │                     └──────────────┘    │
                         └─────────────────────────────────────────┘
 
   ┌─────────────────────────────────────────────────────────────────┐
-  │                    CI/CD Pipeline (GitHub Actions)               │
-  │                                                                  │
+  │                    CI/CD Pipeline (GitHub Actions)              │
+  │                                                                 │
   │  Code Push → Tests → Docker Build → Push to ECR → Deploy to EKS │
   └─────────────────────────────────────────────────────────────────┘
 
   ┌─────────────────────────────────────────────────────────────────┐
-  │              Monitoring Stack (in Kubernetes)                    │
-  │                                                                  │
+  │              Monitoring Stack (in Kubernetes)                   │
+  │                                                                 │
   │         Prometheus (metrics) → Grafana (dashboards)             │
   └─────────────────────────────────────────────────────────────────┘
 ```
